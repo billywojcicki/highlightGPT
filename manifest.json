@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "highlightGPT",
+    "version": "1.1.0",
+    "description": "A lightweight browser extension that saves confused coders a few clicks.",
+    "icons": {
+        "16": "images/brain.png",
+        "32": "images/brain.png",
+        "48": "images/brain.png",
+        "128": "images/brain.png"
+    },
+    "host_permissions": [
+        "https://chat.openai.com/chat"
+    ],
+    "permissions": [
+        "contextMenus",
+        "scripting",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
